@@ -53,7 +53,7 @@ const memories = [
 
 const Index = () => {
   const [entered, setEntered] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const entryRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -65,7 +65,7 @@ const Index = () => {
   useEffect(() => {
     if (headingRef.current && buttonRef.current) {
       const tl = gsap.timeline();
-      
+
       tl.fromTo(
         headingRef.current,
         { opacity: 0, y: 50, scale: 0.9 },
@@ -169,10 +169,10 @@ const Index = () => {
     <div className="min-h-screen relative">
       {/* Background canvas */}
       <StarCanvas />
-      
+
       {/* Floating hearts (only after entering) */}
       {entered && <FloatingHearts />}
-      
+
       {/* Audio player */}
       <AudioPlayer isPlaying={isPlaying} onToggle={() => setIsPlaying(!isPlaying)} />
 
@@ -189,7 +189,7 @@ const Index = () => {
             >
               Happy Birthday prem 💙
             </h1>
-            
+
             <button
               ref={buttonRef}
               onClick={handleEnter}

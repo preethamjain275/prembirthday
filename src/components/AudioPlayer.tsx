@@ -7,7 +7,7 @@ interface AudioPlayerProps {
 }
 
 const playlist = [
-  '/birthday-soft.mp3.mpeg',
+  '/birthday-soft.mp3',
 ];
 
 const AudioPlayer = ({ isPlaying, onToggle }: AudioPlayerProps) => {
