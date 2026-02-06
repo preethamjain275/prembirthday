@@ -222,6 +222,15 @@ const Index = () => {
       {/* Main Content (after entry) */}
       {entered && (
         <div ref={mainContentRef} className="relative z-10">
+          {/* Back Button */}
+          <button
+            onClick={() => setEntered(false)}
+            className="fixed top-6 left-6 z-50 px-6 py-2 rounded-full bg-secondary/80 backdrop-blur-sm border border-primary/30 hover:bg-secondary transition-all duration-300 hover:scale-110 font-body text-foreground"
+            aria-label="Back"
+          >
+            ← Back
+          </button>
+
           {/* Celebrate & Memories Section */}
           <section
             ref={celebrateRef}
