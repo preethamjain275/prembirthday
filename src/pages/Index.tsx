@@ -10,50 +10,50 @@ gsap.registerPlugin(ScrollTrigger);
 
 const memories = [
   {
-    image: '/photo1.jpg',
+    image: '/photo1.jpeg',
     text: 'Back then, everything was new. Somehow, you became my constant.',
   },
   {
-    image: '/photo2.jpg',
+    image: '/photo2.jpeg',
     text: "We didn't plan this friendship. It just happened… and stayed.",
   },
   {
-    image: '/photo3.jpg',
+    image: '/photo3.jpeg',
     text: 'Some of my best laughs exist because of you.',
   },
   {
-    image: '/photo4.jpg',
+    image: '/photo4.jpeg',
     text: 'On days when everything felt heavy, your presence made it lighter.',
   },
   {
-    image: '/photo5.jpg',
+    image: '/photo5.jpeg',
     text: "Our inside jokes don't need explanations.",
   },
   {
-    image: '/photo6.jpg',
+    image: '/photo6.jpeg',
     text: 'From first semester to now, we both grew — but we stayed us.',
   },
   {
-    image: '/photo7.jpg',
+    image: '/photo7.jpeg',
     text: 'You never needed many words. You were just there, and that mattered.',
   },
   {
-    image: '/photo8.jpg',
+    image: '/photo8.jpeg',
     text: "I don't say this often, but I'm really grateful for you.",
   },
   {
-    image: '/photo9.jpg',
+    image: '/photo9.jpeg',
     text: "Today, you're not just my best friend. You're part of my everyday life.",
   },
   {
-    image: '/photo10.jpg',
+    image: '/photo10.jpeg',
     text: "From first semester to third semester, we walked together. And I think… we'll keep walking for a long time.",
   },
 ];
 
 const Index = () => {
   const [entered, setEntered] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const entryRef = useRef<HTMLDivElement>(null);
   const mainContentRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -187,7 +187,7 @@ const Index = () => {
               ref={headingRef}
               className="font-heading text-5xl md:text-7xl lg:text-8xl text-foreground text-glow mb-12"
             >
-              Happy Birthday 💙
+              Happy Birthday prem 💙
             </h1>
             
             <button

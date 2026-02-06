@@ -7,8 +7,7 @@ interface AudioPlayerProps {
 }
 
 const playlist = [
-  '/birthday-soft.mp3',
-  '/piano-light.mp3',
+  '/birthday-soft.mp3.mpeg',
 ];
 
 const AudioPlayer = ({ isPlaying, onToggle }: AudioPlayerProps) => {
@@ -65,7 +64,7 @@ const AudioPlayer = ({ isPlaying, onToggle }: AudioPlayerProps) => {
 
   return (
     <>
-      <audio ref={audioRef} loop={false} preload="auto" />
+      <audio ref={audioRef} loop={true} preload="auto" />
       
       {isPlaying && (
         <button
